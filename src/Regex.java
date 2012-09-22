@@ -354,7 +354,7 @@ class RegexEngine {
 	}
 	
 	/* processes more complex regex syntax into ()?+*| components */
-public static AutomataFrag regexToAutomata(String regex, int start, int end)
+	public static AutomataFrag regexToAutomata(String regex, int start, int end)
 	{	
 		Stack<AutomataFrag> frags = new Stack<AutomataFrag>();
 		AutomataFrag root = new AutomataFrag();
@@ -482,7 +482,7 @@ public static AutomataFrag regexToAutomata(String regex, int start, int end)
 	}
 	
 	/* occupy all blank nodes accessible from root*/
-public static void DFSOccupyBlankNode(HashSet<Node> blankSpan, Node node){
+	public static void DFSOccupyBlankNode(HashSet<Node> blankSpan, Node node){
 		
 		Stack<Node> nodes = new Stack<Node>();
 		nodes.push(node);
